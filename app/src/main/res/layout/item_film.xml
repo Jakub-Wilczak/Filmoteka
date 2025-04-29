@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="168dp">
+
+        <ImageView
+            android:id="@+id/filmImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/filmStatusImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/filmDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/filmName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="Gwiezdne wojny część 1 - Mroczne widmo"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/filmStatusImage"
+            app:layout_constraintEnd_toStartOf="@+id/filmImage"
+            app:layout_constraintStart_toEndOf="@+id/filmStatusImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/filmDate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:text="ALLELUJE, Zjadłbym coś dobrego lol. GIMME FOOD. Nie wiem, po co to piszę, ale wygląda fajnie LOLOLOLOLOL"
+            android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+            app:layout_constraintBottom_toBottomOf="@+id/filmImage"
+            app:layout_constraintEnd_toStartOf="@+id/filmImage"
+            app:layout_constraintStart_toStartOf="@+id/filmName"
+            app:layout_constraintTop_toBottomOf="@+id/filmStatusImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

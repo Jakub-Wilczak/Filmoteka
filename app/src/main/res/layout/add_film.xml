@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/cardView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="main top bar"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Filmoteka"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/main_icon" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/filmImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="571dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/Film_name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Film Name"
+        android:textSize="28sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:hint="Star Wars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Film_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/Film_name_text" />
+
+    <TextView
+        android:id="@+id/film_date_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Select Release Date"
+        android:textSize="28sp"
+        app:layout_constrainedWidth="false"
+        app:layout_constraintStart_toStartOf="@+id/Film_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+        app:layout_constraintWidth_percent="0.8" />
+
+
+
+    <Button
+        android:id="@+id/datePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="29 APR 2025"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintLeft_toLeftOf="@id/Film_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/film_date_text"
+        android:layout_marginTop="10dp"
+        android:onClick="openDatePicker"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/filmStatusImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="571dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/filmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Romek Rodek"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <TextView
+        android:id="@+id/filmDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="ALLELUJE, Zjadłbym coś dobrego lol. GIMME FOOD. Nie wiem, po co to piszę, ale wygląda fajnie LOLOLOLOLOL"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

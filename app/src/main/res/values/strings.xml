@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Swiezak</string>
+
+    <string-array name="products">
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+        <item>asdfasdf</item>
+    </string-array>
+</resources>
